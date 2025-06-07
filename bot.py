@@ -7,10 +7,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Привет, Женя! Я готов фиксировать сделки и показывать курсы. Введи /курс или /сделка.")
 
 async def kurs(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("📊 Лучшие курсы:
-Binance: 39.10 → 39.80
-Bybit: 39.00 → 39.75
-(данные статичны, подключим API позже)")
+    await update.message.reply_text(
+    "📊 Лучшие курсы:\nBinance: 39.10 → 39.80\nBybit: 39.00 → 39.75\n(данные статичны, подключим API позже)"
+)
 
 async def profit(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("💰 Прибыль за сегодня: +18.30$
