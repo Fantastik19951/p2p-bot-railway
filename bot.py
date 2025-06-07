@@ -12,9 +12,8 @@ async def kurs(update: Update, context: ContextTypes.DEFAULT_TYPE):
 )
 
 async def profit(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("💰 Прибыль за сегодня: +18.30$
-За неделю: +54.20$")
-
+    await update.message.reply_text("💰 Прибыль за сегодня: +18.30$")
+    
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
     app = ApplicationBuilder().token("PASTE_YOUR_TOKEN_HERE").build()
